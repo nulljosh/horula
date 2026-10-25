@@ -1,0 +1,53 @@
+# Clock roadmap
+
+v1 is live: full iOS Clock parity (see `GAPS.md`, 22 of 22). Every version below ships on its own: tested headless at 390px in light and dark, deployed with `./deploy.sh`, `CACHE` bumped in `sw.js`, tagged `clock-vN.0.0`. Web only, no build, no dependencies, no account. Every version also closes the open `GAPS.md` round 2 lines (iOS 26 and macOS Clock) that fit it.
+
+## v2: a floor under it
+- [x] `node --test` suite for the pure parts: repeat text, next alarm, sunrise and sunset, timer end times, lap best and worst.
+- [x] Accessibility pass: every control labelled, visible focus ring, reduced motion stops the sweep glide, ringing view traps focus.
+- [x] Version shown in a new Settings sheet, read from one constant.
+- [x] Four tabs like iOS Clock (World Clock, Alarms, Stopwatch, Timers), each with an icon and a label; the clock face leads World Clock.
+- [x] Round header buttons like iOS, one header height on every tab, spacing on the 8 point grid.
+- [x] System type: SF, then Lato, then Helvetica. Bundled fonts removed.
+
+## v3: world clock you can plan with
+- [x] Each city shows day or night (sun or moon from its real sunrise, coordinates from IANA zone.tab) next to its offset, like iOS.
+- [x] Scrub: drag a slider and every city's time moves with it, to find a meeting hour.
+- [x] Tap a city to see its sunrise, sunset and hours of daylight.
+
+## v4: alarms you trust
+- [x] Alarm sound fades in over 30 seconds instead of starting loud.
+- [x] Skip just the next ring of a repeating alarm.
+- [x] Vibrate on phones that allow it.
+- [x] Warn once, in plain words, that a closed tab cannot ring.
+- [x] Snooze length from 1 to 15 minutes, Edit mode deletes alarms, iOS sleep row with Change. Fixed: Delete in the sheet could overwrite another alarm.
+
+## v5: your clock, backed up
+- [x] Export everything (alarms, cities, timers, sleep) to one file and import it on another device.
+- [x] Links that do things: `app.html#timer=10m` starts a timer, `#alarm=07:30` adds an alarm, so Shortcuts and bookmarks can drive it.
+- [x] Keyboard shortcuts on every tab, listed behind `?`.
+
+## v6: nightstand faces
+- [ ] Choose a face: big digits, analog, or a sun dial that tracks the day.
+- [ ] Pixels drift a little every minute so a screen left on all night does not burn in.
+- [ ] Dim slider right on the nightstand.
+
+## v7: timers that do more
+- [ ] Preset timers you name and pin (tea 4:00, pasta 9:00).
+- [ ] Interval timer: work and rest rounds with a different sound for each.
+- [ ] Copy or download stopwatch laps as a table.
+
+## v8: every language
+- [ ] UI text in English, French, Spanish, German, Japanese, Chinese, Portuguese, Korean, Italian, Dutch, Arabic, Hindi.
+- [ ] Right to left layout for Arabic.
+- [ ] City search works in the local language.
+
+## v9: a clock for other pages
+- [ ] `embed.html?city=Tokyo` gives a small live clock any site can drop in.
+- [ ] Countdown embed to a date, for launches and birthdays.
+- [ ] Embeds follow light and dark and need no script on the host page.
+
+## v10: done right
+- [ ] Lighthouse 100 on performance, accessibility, best practices and SEO for both pages.
+- [ ] Landing refreshed for everything v2 to v9 added, with new art where a section needs it.
+- [ ] README, WHITEPAPER and CLAUDE.md current; launch kit ready.

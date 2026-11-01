@@ -2,8 +2,6 @@
 
 ![license](https://img.shields.io/badge/license-MIT-green)
 
-# Horula
-
 A clock that does what the iPhone clock does, in a browser tab. Horula is Latin for "little hour". Formerly Clock.
 
 World clocks, alarms, a bedtime schedule, a stopwatch, timers and a nightstand mode, in twelve languages. Native on iPhone and Mac too. It loads once, works offline and installs to your home screen or dock. No account, no tracking, one small page.

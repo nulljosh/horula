@@ -90,4 +90,4 @@ App Store screens of Alarmy, Rise, Sleep Cycle, MultiTimer, Timer+, World Clock 
 ## v22.2: rain
 
 ## Ingested 2026-10-30
-- [ ] README needs screenshots
+- [x] README needs screenshots (11-01: World Clock in light and dark from the live web app, docs/screenshots)

@@ -10,6 +10,8 @@ World clocks, alarms, a bedtime schedule, a stopwatch, timers and a nightstand m
 
 **[horula.jaybulb.com →](https://horula.jaybulb.com)** · **[Open the app →](https://horula.jaybulb.com/app)**
 
+<img src="docs/screenshots/web-light.png" width="280" alt="World Clock in light mode"> <img src="docs/screenshots/web-dark.png" width="280" alt="World Clock in dark mode">
+
 ## Features
 
 - **World clocks.** Add a city by name, see if the sun is up there, and slide time to plan across cities. Wide windows show a grid of dials.

@@ -22,6 +22,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="tokens.css">
 <link rel="stylesheet" href="landing.css">
+<link rel="stylesheet" href="hero.css?v=1">
 </head>
 <body>
 
@@ -39,8 +40,8 @@
 <!-- Art drawn for this page by scripts/gen_art.py and dithered to halftone. Nothing borrowed. -->
 <main id="top">
 <section class="hero">
-  <div class="hero-art" data-speed=".35" style="--img: url(art/band.png)" aria-hidden="true"></div>
-  <div class="wrap center">
+  <div class="hero-bg" aria-hidden="true" inert><div class="cwall" id="cwall"></div></div>
+  <div class="wrap center hero-copy">
     <p class="label">A clock for any browser</p>
     <h1>On time</h1>
     <p class="lead">World clocks, alarms, a stopwatch and timers in one page. It works offline and installs like an app.</p>
@@ -51,13 +52,6 @@
     <p class="fine">iPhone, Mac, Android and any browser. Free. No account.</p>
   </div>
 
-  <div class="demo-wrap reveal">
-    <div class="stage">
-      <div class="art stage-art" data-speed=".15" style="--img: url(art/stage.png)" aria-hidden="true"></div>
-      <iframe class="app" src="app" title="Horula, live. Try the tabs, set a timer." loading="lazy"></iframe>
-    </div>
-    <p class="demo-hint">The real app, live. Set a timer or add a city.</p>
-  </div>
 </section>
 
 <section class="band" id="features">
@@ -152,5 +146,6 @@
 })();
 </script>
 <script src="footer-band.js" defer></script>
+<script src="hero.js?v=1" defer></script>
 </body>
 </html>

@@ -16,7 +16,6 @@ v1 is live: full iOS Clock parity (see `GAPS.md`, 22 of 22). Every version below
 - [ ] Apple Watch app: built (world clock, stopwatch, timers, face widgets), screenshots taken (apple/shots/watch-up, gitignored). Ships in 6.1 right after 6.0 is approved: embed HorulaWatch in the iOS target, bump, upload, add the Watch Ultra set, submit.
 
 ## v7: everywhere else
-- [ ] Windows: installable from the Microsoft Store (packaged web app). Parked: needs Joshua's Microsoft Partner Center account.
 - [ ] Linux: Flatpak and a .deb that open the same app.
 - [ ] Joshua Tree: a native Horula for the Joshua Tree OS.
 
